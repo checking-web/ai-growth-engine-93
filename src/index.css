@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 175 80% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 20% 96%;
+    --secondary-foreground: 220 20% 20%;
+
+    --muted: 200 15% 95%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 175 70% 94%;
+    --accent-foreground: 175 80% 25%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 175 80% 35%;
+
+    --radius: 0.75rem;
+
+    --section-1: 175 80% 35%;
+    --section-2: 200 80% 45%;
+    --section-3: 260 70% 55%;
+    --section-4: 330 70% 55%;
+    --section-5: 25 90% 55%;
+    --section-6: 145 60% 40%;
+    --section-7: 45 90% 50%;
+    --section-8: 0 70% 55%;
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 220 25% 11%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 220 25% 11%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 175 70% 45%;
+    --primary-foreground: 220 25% 8%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 215 15% 60%;
+
+    --accent: 175 50% 15%;
+    --accent-foreground: 175 70% 60%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 175 70% 45%;
+
+    --section-1: 175 70% 45%;
+    --section-2: 200 70% 55%;
+    --section-3: 260 60% 65%;
+    --section-4: 330 60% 65%;
+    --section-5: 25 80% 60%;
+    --section-6: 145 50% 50%;
+    --section-7: 45 80% 55%;
+    --section-8: 0 60% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+}
